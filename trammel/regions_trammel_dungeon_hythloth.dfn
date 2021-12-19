@@ -1,0 +1,21 @@
+// regions_dungeon_hythloth.dfn
+// [12351-12400]
+
+[REGION 12400]
+{
+NAME=Hythloth
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=0
+GATE=0
+RECALL=0
+DUNGEON=1
+X1=5896
+Y1=4
+X2=6142
+Y2=244
+WORLD=1
+}
+
+EOF

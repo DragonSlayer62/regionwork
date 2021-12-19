@@ -1,0 +1,23 @@
+// regions_felucca_town_magincia.dfn
+// [501-600]
+
+[REGION 600]
+{
+NAME=the town of Magincia
+MUSICLIST=5
+GUARDED=1
+GUARDLIST=guard
+GUARDOWNER=The Town
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+ESCORTS=1
+X1=3645
+Y1=2020
+X2=3815
+Y2=2280
+WORLD=0
+}
+
+EOF

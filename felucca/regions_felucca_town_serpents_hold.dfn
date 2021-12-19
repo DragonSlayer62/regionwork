@@ -1,0 +1,35 @@
+// regions_felucca_town_serpents_hold.dfn
+// [1101-1200]
+
+[REGION 1101]
+{
+NAME=
+PARENTREGION=1100
+GUARDOWNER=the town
+X1=
+Y1=
+X2=
+Y2=
+WORLD=0
+}
+
+[REGION 1200]
+{
+NAME=the town of Yew
+MUSICLIST=13
+GUARDED=1
+GUARDLIST=guard
+GUARDOWNER=Lord British's
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+ESCORTS=1
+X1=250
+Y1=750
+X2=700
+Y2=1260
+WORLD=0
+}
+
+EOF

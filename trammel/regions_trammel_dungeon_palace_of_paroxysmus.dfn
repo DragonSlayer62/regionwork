@@ -1,0 +1,21 @@
+// regions_dungeon_palace_of_paroxysmus.dfn
+// [12601-12650]
+
+[REGION 12650]
+{
+NAME=Palace of Paroxysmus
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=6198
+Y1=316
+X2=6622
+Y2=678
+WORLD=1
+}
+
+EOF

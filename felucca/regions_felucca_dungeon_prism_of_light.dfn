@@ -1,0 +1,21 @@
+// regions_dungeon_prism_of_light.dfn
+// [2651-2700]
+
+[REGION 2700]
+{
+NAME=Prism of Light
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=6455
+Y1=16
+X2=6621
+Y2=256
+WORLD=0
+}
+
+EOF

@@ -1,0 +1,21 @@
+// regions_dungeon_painted_caves.dfn
+// [12551-12600]
+
+[REGION 12600]
+{
+NAME=Painted Caves
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=6239
+Y1=852
+X2=6316
+Y2=917
+WORLD=1
+}
+
+EOF

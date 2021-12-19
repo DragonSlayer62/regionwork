@@ -1,0 +1,21 @@
+// regions_malas_world.dfn
+// [25001-28000]
+
+//Malas Map
+[REGION 28000]
+{
+GUARDED=0
+MUSICLIST=255
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+HOUSING=1
+X1=0
+Y1=0
+X2=2559
+Y2=2047
+WORLD=3
+}
+
+EOF

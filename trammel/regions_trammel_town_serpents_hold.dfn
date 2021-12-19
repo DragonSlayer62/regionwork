@@ -1,0 +1,23 @@
+// regions_city_serpents_hold.dfn
+// [11101-11200]
+
+[REGION 11200]
+{
+NAME=the town of Yew
+MUSICLIST=13
+GUARDED=1
+GUARDLIST=guard
+GUARDOWNER=Lord British's
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+ESCORTS=1
+X1=250
+Y1=750
+X2=700
+Y2=1260
+WORLD=1
+}
+
+EOF

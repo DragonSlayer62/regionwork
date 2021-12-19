@@ -1,0 +1,21 @@
+// regions_dungeon_solen_hive.dfn
+// [2801-2850]
+
+[REGION 2850]
+{
+NAME=Solen Hive
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=5642
+Y1=1776
+X2=5935
+Y2=2039
+WORLD=0
+}
+
+EOF

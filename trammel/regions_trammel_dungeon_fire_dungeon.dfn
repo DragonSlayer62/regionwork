@@ -1,0 +1,21 @@
+// regions_dungeon_fire_dungeon.dfn
+// [12301-12350]
+
+[REGION 12350]
+{
+NAME=Fire Dungeon
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=0
+GATE=0
+RECALL=0
+DUNGEON=1
+X1=5634
+Y1=1283
+X2=5795
+Y2=1533
+WORLD=1
+}
+
+EOF

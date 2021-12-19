@@ -1,0 +1,1008 @@
+//*****************************************************************
+//*                         UOX3 DFNs v0.99.3                     *
+//*                https://github.com/UOX3DevTeam/UOX3         	  *
+//*                                                               *
+//* Last Update : 6,December,2021                                 *
+//* Script : regions.dfn                                          *
+//*****************************************************************
+//* Switches GUARDED,MARK,GATE,RECALL,ESCORTS,MAGICDAMAGE: 0=off/no; 1=on/yes *
+//* Set weather with ABWEATH from weather.dfn file.               *
+//*                                                               *
+//* IMPORTANT: The bare minimum amount of regions that must be present
+//* 	for UOX3 to work properly are the base-regions covering the various
+//*		available maps in their entirety (See regions 250-255). These
+//*		must be the last REGIONs defined in the script!
+//              REGION 255 can not be changed it is a hard coded region.
+//*****************************************************************
+//	[REGION #]      Any region number not being used.
+//	{
+//	APPEARANCE=	Winter/Spring/Summer/Fall
+//	NAME=		name of region here
+//	GUARDED=	0=off/no; 1=on/yes
+//	GUARDLIST=	npclist from npclist.dn file.
+//	GUARDOWNER=	name if the guards, Example: the body guards
+//	MUSICLIST=	#
+//	MAGICDAMAGE=	0=off/no; 1=on/yes
+//	SAFEZONE=	0=off/no; 1=on/yes
+//	MARK=		0=off/no; 1=on/yes
+//	GATE=		0=off/no; 1=on/yes
+//	RECALL=		0=off/no; 1=on/yes
+//	HOUSING=	0=off/no; 1=on/yes
+//	ESCORTS=	0=off/no; 1=on/yes
+//	ABWEATH=        #
+//	X1=		#
+//	Y1=		#
+//	X2=		#
+//	Y2=		#
+//	}
+// Felucca Cities
+//*****************************************************************
+// regions_felucca_town_britain.dfn 			[1-100]
+// regions_felucca_town_buccaneers_den.dfn		[101-200]
+// regions_felucca_town_cove.dfn 			[201-300]// Note 255 is Hard Coded Region.
+// regions_felucca_town_delucia.dfn 			[301-400]
+// regions_felucca_town_jhelom.dfn 			[401-500]
+// regions_felucca_town_magincia.dfn 			[501-600]
+// regions_felucca_town_minoc.dfn 			[601-700]
+// regions_felucca_town_moonglow.dfn 			[701-800]
+// regions_felucca_town_nujelm.dfn			[801-900]
+// regions_felucca_town_ocllo.dfn			[901-1000]
+// regions_felucca_town_papua.dfn			[1001-1100]
+// regions_felucca_town_serpents_hold.dfn		[1101-1200]
+// regions_felucca_town_skara_bae.dfn			[1201-1300]
+// regions_felucca_town_trinisc.dfn			[1301-1400]
+// regions_felucca_town_vesper.dfn			[1401-1500]
+// regions_felucca_town_wind.dfn			[1501-1600]
+// regions_felucca_town_yew.dfn 			[1601-1700]
+// regions_felucca_town_reserved.dfn 			[1701-1800]
+// regions_felucca_town_reserved.dfn 			[1801-1900]
+// regions_felucca_town_reserved.dfn 			[1901-2000]
+//*****************************************************************
+// Felucca Dunegons
+//*****************************************************************
+// regions_felucca_dungeon_blighted_grove.dfn		[2001-2050]
+// regions_felucca_dungeon_britain_passage.dfn		[2051-2100]
+// regions_felucca_dungeon_covetous.dfn			[2101-2150]
+// regions_felucca_dungeon_deceit.dfn			[2151-2200]
+// regions_felucca_dungeon_despise.dfn			[2201-2250]
+// regions_felucca_dungeon_destard.dfn			[2251-2300]
+// regions_felucca_dungeon_fire_dungeon.dfn		[2301-2350]
+// regions_felucca_dungeon_hythloth.dfn			[2351-2400]
+// regions_felucca_dungeon_ice_dungeon.dfn		[2401-2450]
+// regions_felucca_dungeon_khaldun.dfn			[2451-2500]
+// regions_felucca_dungeon_orc_caves.dfn		[2501-2550]
+// regions_felucca_dungeon_painted_caves.dfn		[2551-2600]
+// regions_felucca_dungeon_palace_of_paroxysmus.dfn	[2601-2650]
+// regions_felucca_dungeon_prism_of_light.dfn		[2651-2700]
+// regions_felucca_dungeon_sanctuary.dfn		[2701-2750]
+// regions_felucca_dungeon_shame.dfn			[2751-2800]
+// regions_felucca_dungeon_solen_hive.dfn		[2801-2850]
+// regions_felucca_dungeon_terathan_keep.dfn		[2851-2900]
+// regions_felucca_dungeon_trinsic_passage.dfn		[2901-2950]
+// regions_felucca_dungeon_wind.dfn			[2951-3000]
+// regions_felucca_dungeon_wrong.dfn			[3001-3050]
+// regions_felucca_dungeon_reserved.dfn			[3051-3500]
+//*****************************************************************
+// Felucca World
+//*****************************************************************
+// regions_felucca_world_graveyards.dfn			[3501-3600]
+// regions_felucca_world_misc.dfn			[3601-7000]
+// regions_felucca_world.dfn				[7001-10000]
+//*****************************************************************
+// Trammel Cities
+//*****************************************************************
+// regions_trammel_town_britain.dfn 			[10001-10100]
+// regions_trammel_town_buccaneers_den.dfn		[10101-10200]
+// regions_trammel_town_cove.dfn 			[10201-10300]
+// regions_trammel_town_delucia.dfn 			[10301-10400]
+// regions_trammel_town_jhelom.dfn 			[10401-10500]
+// regions_trammel_town_magincia.dfn 			[10501-10600]
+// regions_trammel_town_minoc.dfn 			[10601-10700]
+// regions_trammel_town_moonglow.dfn 			[10701-10800]
+// regions_trammel_town_nujelm.dfn			[10801-10900]
+// regions_trammel_town_ocllo.dfn			[10901-11000]
+// regions_trammel_town_papua.dfn			[11001-11100]
+// regions_trammel_town_serpents_hold.dfn		[11101-11200]
+// regions_trammel_town_skara_bae.dfn			[11201-11300]
+// regions_trammel_town_trinisc.dfn			[11301-11400]
+// regions_trammel_town_vesper.dfn			[11401-11500]
+// regions_trammel_town_wind.dfn			[11501-11600]
+// regions_trammel_town_yew.dfn 			[11601-11700]
+// regions_trammel_town_reserved.dfn 			[11701-11800]
+// regions_trammel_town_reserved.dfn 			[11801-11900]
+// regions_trammel_town_reserved.dfn 			[11901-12000]
+//*****************************************************************
+// Trammel Dunegons
+//*****************************************************************
+// regions_trammel_dungeon_blighted_grove.dfn		[12001-12050]
+// regions_trammel_dungeon_britain_passage.dfn		[12051-12100]
+// regions_trammel_dungeon_covetous.dfn			[12101-12150]
+// regions_trammel_dungeon_deceit.dfn			[12151-12200]
+// regions_trammel_dungeon_despise.dfn			[12201-12250]
+// regions_trammel_dungeon_destard.dfn			[12251-12300]
+// regions_trammel_dungeon_fire_dungeon.dfn		[12301-12350]
+// regions_trammel_dungeon_hythloth.dfn			[12351-12400]
+// regions_trammel_dungeon_ice_dungeon.dfn		[12401-12450]
+// regions_trammel_dungeon_khaldun.dfn			[12451-12500]
+// regions_trammel_dungeon_orc_caves.dfn		[12501-12550]
+// regions_trammel_dungeon_painted_caves.dfn		[12551-12600]
+// regions_trammel_dungeon_palace_of_paroxysmus.dfn	[12601-12650]
+// regions_trammel_dungeon_prism_of_light.dfn		[12651-12700]
+// regions_trammel_dungeon_sanctuary.dfn		[12701-12750]
+// regions_trammel_dungeon_shame.dfn			[12751-12800]
+// regions_trammel_dungeon_solen_hive.dfn		[12801-12850]
+// regions_trammel_dungeon_terathan_keep.dfn		[12851-12900]
+// regions_trammel_dungeon_trinsic_passage.dfn		[12901-12950]
+// regions_trammel_dungeon_wrong.dfn			[12951-13000]
+// regions_trammel_dungeon_reserved.dfn			[13001-13500]
+//*****************************************************************
+// Trammel World
+//*****************************************************************
+// regions_trammel_world_graveyards.dfn			[13501-13600]
+// regions_trammel_world_forts.dfn			[13601-13700]
+// regions_trammel_world_guardposts.dfn			[13701-13800]
+// regions_trammel_world_lands.dfn			[13801-17000]
+// regions_trammel_world_ocean.dfn			[17001-19000]
+// regions_trammel_world.dfn				[19001-20000]
+//*****************************************************************
+// Ilshenar World
+//*****************************************************************
+// regions_ilshenar_town_reserved.dfn 			[20001-21000]
+// regions_ilshenar_dungeon_reserved.dfn		[21001-22000]
+// regions_ilshenar_world.dfn				[22001-25000]
+//*****************************************************************
+// malas World
+//*****************************************************************
+// regions_malas_world.dfn				[25001-28000]
+//*****************************************************************
+// Tokuno World
+//*****************************************************************
+// regions_tokuno_world.dfn				[28001-32000]
+//*****************************************************************
+// termur and eodon World
+//*****************************************************************
+// regions_termur_world.dfn				[32001-35000]
+
+//defualt region Character Creation Region
+[REGION 255]
+{
+NAME=Character Creation Region
+GUARDED=0
+MUSICLIST=255
+MAGICDAMAGE=1
+SAFEZONE=1
+MARK=0
+GATE=0
+RECALL=1
+HOUSING=0
+X1=5121
+Y1=256
+X2=5372
+Y2=504
+}
+
+[MUSICLIST 1]
+{//britainpos,loop
+MUSIC=09
+}
+
+[MUSICLIST 2]
+{//bucsden,loop
+MUSIC=11
+}
+
+[MUSICLIST 3]
+{//jhelom
+MUSIC=12
+}
+
+[MUSICLIST 4]
+{//lbc
+MUSIC=13
+}
+
+[MUSICLIST 5]
+{//newmagincia,loop
+MUSIC=15
+}
+
+[MUSICLIST 6]
+{//minocpos,loop
+MUSIC=16
+}
+
+[MUSICLIST 7]
+{//valoriapos,loop
+MUSIC=17
+}
+
+[MUSICLIST 8]
+{//stones
+MUSIC=19
+}
+
+[MUSICLIST 9]
+{//scarabreapos,loop
+MUSIC=20
+}
+
+[MUSICLIST 10]
+{//trinsicpos,loop
+MUSIC=21
+}
+
+[MUSICLIST 11]
+{//vesper1
+MUSIC=22
+}
+
+[MUSICLIST 12]
+{//linelle //yew1
+MUSIC=14
+MUSIC=23
+}
+
+[MUSICLIST 13]
+{//yewpos,loop
+MUSIC=24
+}
+
+[MUSICLIST 14]
+{//overlordv2
+MUSIC=44
+}
+
+[MUSICLIST 15]
+{//nujelm
+MUSIC=45
+}
+
+[MUSICLIST 16]
+{//cove,loop
+MUSIC=47
+}
+
+[MUSICLIST 17]
+{//moonglowpos,loop
+MUSIC=48
+}
+
+[MUSICLIST 18]
+{//stones1
+MUSIC=08
+}
+
+[MUSICLIST 19]
+{//walking,loop
+MUSIC=30
+}
+
+[MUSICLIST 20]
+{//yewpos,loop
+MUSIC=24
+}
+
+[MUSICLIST 21]
+{//turfin,loop
+MUSIC=05
+}
+
+// Tavern Music
+[MUSICLIST 22]
+{//tavern1 tavern2 tavern3 pubtune,loop
+MUSIC=34
+MUSIC=35
+MUSIC=36
+MUSIC=37
+}
+
+[MUSICLIST 23]
+{//dungeon dragonshi,loop
+MUSIC=25
+MUSIC=26
+}
+
+[MUSICLIST 24]
+{//turfin,loop
+MUSIC=0
+}
+
+[MUSICLIST 25]
+{//turfin,loop
+MUSIC=1
+}
+
+[MUSICLIST 26]
+{//turfin,loop
+MUSIC=2
+}
+
+[MUSICLIST 27]
+{//turfin,loop
+MUSIC=3
+}
+
+[MUSICLIST 28]
+{//turfin,loop
+MUSIC=4
+}
+
+[MUSICLIST 29]
+{//turfin,loop
+MUSIC=5
+}
+
+[MUSICLIST 30]
+{//turfin,loop
+MUSIC=6
+}
+
+[MUSICLIST 31]
+{//NewMaginciaMarch.mp3
+MUSIC=98
+}
+
+[MUSICLIST 32]
+{//Medieval.mp3
+MUSIC=71
+}
+
+[MUSICLIST 33]
+{//Festival.mp3
+MUSIC=69
+}
+
+[MUSICLIST COMBAT]
+{//pubtune,loop goodevil,loop humanoids,loop
+MUSIC=37
+MUSIC=38
+MUSIC=39
+}
+
+[MUSICLIST 255]
+{//citynightedit,loop
+MUSIC=27
+}
+
+
+// Inns Script, Add your Inns here, ONE SECTION ONLY!! Feel free to comment.
+// Original Inn script by Mr_Fixit, Inns Coded by Zippy
+[INSTALOG]
+{
+// Britain (northeast of bank) - Part 1
+X1=1492
+Y1=1602
+X2=1498
+Y2=1624
+WORLD=0
+INSTANCEID=0
+// Britain (northeast of bank) - Part 2
+X1=1499
+Y1=1610
+X2=1506
+Y2=1624
+WORLD=0
+INSTANCEID=0
+// Britain (east of bank)
+X1=1576
+Y1=1584
+X2=1598
+Y2=1598
+WORLD=0
+INSTANCEID=0
+// Britain (North of smithy) - Part 1
+X1=1456
+Y1=1512
+X2=1470
+Y2=1526
+WORLD=0
+INSTANCEID=0
+// Britain (North of smithy) - Part 2
+X1=1471
+Y1=1512
+X2=1478
+Y2=1518
+WORLD=0
+INSTANCEID=0
+// Bucs Den inn - Part 1
+X1=2712
+Y1=2080
+X2=2726
+Y2=2094
+WORLD=0
+INSTANCEID=0
+// Bucs Den inn - Part 2
+X1=2712
+Y1=2096
+X2=2718
+Y2=2102
+WORLD=0
+INSTANCEID=0
+// the morning star inn Jhelom - part 1
+X1=1352
+Y1=3800
+X2=1367
+Y2=3831
+WORLD=0
+INSTANCEID=0
+// the morning star inn Jhelom  - Part 2
+X1=1368
+Y1=3808
+X2=1375
+Y2=3823
+WORLD=0
+INSTANCEID=0
+// the horses head jhelom - part 1
+X1=1432
+Y1=3768
+X2=1440
+Y2=3775
+WORLD=0
+INSTANCEID=0
+// the horses head jhelom - part 2
+X1=1440
+Y1=3768
+X2=1463
+Y2=3783
+WORLD=0
+INSTANCEID=0
+// Moonglow the scholars inn - Part 1
+X1=4384
+Y1=1152
+X2=4391
+Y2=1175
+WORLD=0
+INSTANCEID=0
+// Moonglow the scholars inn - Part 2
+X1=4392
+Y1=1160
+X2=4407
+Y2=1167
+WORLD=0
+INSTANCEID=0
+// Moonglow the scholars inn - Part 3
+X1=4400
+Y1=1152
+X2=4407
+Y2=1159
+WORLD=0
+INSTANCEID=0
+// Nuhel'm inn - Part 1
+X1=3728
+Y1=1192
+X2=3735
+Y2=1205
+WORLD=0
+INSTANCEID=0
+// Nuhel'm inn - Part 2
+X1=3736
+Y1=1184
+X2=3750
+Y2=1205
+WORLD=0
+INSTANCEID=0
+// Ocllo inn
+X1=3664
+Y1=2608
+X2=3678
+Y2=2622
+WORLD=0
+INSTANCEID=0
+// Trinsic inn 1
+X1=1834
+Y1=2728
+X2=1854
+Y2=2742
+WORLD=0
+INSTANCEID=0
+// Trinsic inn 2
+X1=2024
+Y1=2784
+X2=2038
+Y2=2811
+WORLD=0
+INSTANCEID=0
+// Vesper inn 1 - Part 1
+X1=2952
+Y1=864
+X2=2966
+Y2=894
+WORLD=0
+INSTANCEID=0
+// Vesper inn 1 - Part 2
+X1=2968
+Y1=872
+X2=2974
+Y2=886
+WORLD=0
+INSTANCEID=0
+// Vesper inn 2 - Part 1
+X1=2768
+Y1=961
+X2=2775
+Y2=974
+WORLD=0
+INSTANCEID=0
+// Vesper inn 2 - Part 2
+X1=2777
+Y1=951
+X2=2790
+Y2=982
+WORLD=0
+INSTANCEID=0
+// Yew inn (castle) - Part 1
+X1=600
+Y1=808
+X2=670
+Y2=831
+WORLD=0
+INSTANCEID=0
+// Yew inn (castle) - Part 2
+X1=624
+Y1=832
+X2=646
+Y2=854
+WORLD=0
+INSTANCEID=0
+// the barely inn delucia (t2a)
+X1=5195
+Y1=4054
+X2=5203
+Y2=4072
+WORLD=0
+INSTANCEID=0
+//Trammel
+// Britain (northeast of bank) - Part 1
+X1=1492
+Y1=1602
+X2=1498
+Y2=1624
+WORLD=1
+INSTANCEID=0
+// Britain (northeast of bank) - Part 2
+X1=1499
+Y1=1610
+X2=1506
+Y2=1624
+WORLD=1
+INSTANCEID=0
+// Britain (east of bank)
+X1=1576
+Y1=1584
+X2=1598
+Y2=1598
+WORLD=1
+INSTANCEID=0
+// Britain (North of smithy) - Part 1
+X1=1456
+Y1=1512
+X2=1470
+Y2=1526
+WORLD=1
+INSTANCEID=0
+// Britain (North of smithy) - Part 2
+X1=1471
+Y1=1512
+X2=1478
+Y2=1518
+WORLD=1
+INSTANCEID=0
+// Bucs Den inn - Part 1
+X1=2712
+Y1=2080
+X2=2726
+Y2=2094
+WORLD=1
+INSTANCEID=0
+// Bucs Den inn - Part 2
+X1=2712
+Y1=2096
+X2=2718
+Y2=2102
+WORLD=1
+INSTANCEID=0
+// Jhelom inn - Part 1
+X1=1352
+Y1=3800
+X2=1366
+Y2=3830
+WORLD=1
+INSTANCEID=0
+// Jhelom inn - Part 2
+X1=1367
+Y1=3808
+X2=1374
+Y2=3822
+WORLD=1
+INSTANCEID=0
+// Moonglow inn - Part 1
+X1=4384
+Y1=1152
+X2=4390
+Y2=1174
+WORLD=1
+INSTANCEID=0
+// Moonglow inn - Part 2
+X1=4391
+Y1=1160
+X2=4399
+Y2=1166
+WORLD=1
+INSTANCEID=0
+// Moonglow inn - Part 3
+X1=4400
+Y1=1152
+X2=4406
+Y2=1166
+WORLD=1
+INSTANCEID=0
+// Nuhel'm inn - Part 1
+X1=3728
+Y1=1192
+X2=3735
+Y2=1205
+WORLD=1
+INSTANCEID=0
+// Nuhel'm inn - Part 2
+X1=3736
+Y1=1184
+X2=3750
+Y2=1205
+WORLD=1
+INSTANCEID=0
+// Haven inn
+X1=3664
+Y1=2608
+X2=3678
+Y2=2622
+WORLD=1
+INSTANCEID=0
+// Trinsic inn 1
+X1=1834
+Y1=2728
+X2=1854
+Y2=2742
+WORLD=1
+INSTANCEID=0
+// Trinsic inn 2
+X1=2024
+Y1=2784
+X2=2038
+Y2=2811
+WORLD=1
+INSTANCEID=0
+// Vesper inn 1 - Part 1
+X1=2952
+Y1=864
+X2=2966
+Y2=894
+WORLD=1
+INSTANCEID=0
+// Vesper inn 1 - Part 2
+X1=2968
+Y1=872
+X2=2974
+Y2=886
+WORLD=1
+INSTANCEID=0
+// Vesper inn 2 - Part 1
+X1=2768
+Y1=961
+X2=2775
+Y2=974
+WORLD=1
+INSTANCEID=0
+// Vesper inn 2 - Part 2
+X1=2777
+Y1=951
+X2=2790
+Y2=982
+WORLD=1
+INSTANCEID=0
+// Yew inn (castle) - Part 1
+X1=600
+Y1=808
+X2=670
+Y2=831
+WORLD=1
+INSTANCEID=0
+// Yew inn (castle) - Part 2
+X1=624
+Y1=832
+X2=646
+Y2=854
+WORLD=1
+INSTANCEID=0
+//Ilshenar Lord Oaks Tavern
+X1=1546
+Y1=1037
+X2=1566
+Y2=1056
+WORLD=2
+INSTANCEID=0
+}
+
+// Areas valid for SOS message locations for sunken shipwrecks
+[SOSAREAS]
+{
+// FELUCCA
+// Yew West
+X1=55
+Y1=100
+X2=290
+Y2=1300
+WORLD=0
+INSTANCEID=0
+// Map West Boundary
+X1=55
+Y1=1540
+X2=305
+Y2=3990
+WORLD=0
+INSTANCEID=0
+// Bay North of Skara Brae
+X1=305
+Y1=1730
+X2=680
+Y2=2035
+WORLD=0
+INSTANCEID=0
+// Jhelom Sea
+X1=1540
+Y1=3595
+X2=2030
+Y2=3990
+WORLD=0
+INSTANCEID=0
+// Trinsic Sea
+X1=2205
+Y1=2380
+X2=3320
+Y2=3315
+WORLD=0
+INSTANCEID=0
+// Britain, Cove, Vesper Sea
+X1=2265
+Y1=1330
+X2=2745
+Y2=1635
+WORLD=0
+INSTANCEID=0
+// Sea between Vesper and Nujelm
+X1=2990
+Y1=1100
+X2=3400
+Y2=1770
+WORLD=0
+INSTANCEID=0
+// Strait North of Nujelm
+X1=3540
+Y1=100
+X2=3840
+Y2=1020
+WORLD=0
+INSTANCEID=0
+// East Center between Magincia, Ocllo, Moonglow, Fire Island - Part 1
+X1=3840
+Y1=1550
+X2=4500
+Y2=3050
+WORLD=0
+INSTANCEID=0
+// East Center between Magincia, Ocllo, Moonglow, Fire Island - Part 2
+X1=4595
+Y1=1550
+X2=5030
+Y2=3050
+WORLD=0
+INSTANCEID=0
+// the barnacle minoc
+X1=2457
+Y1=397
+X2=2496
+Y2=404
+X1=2465
+Y1=405
+X2=2472
+Y2=412
+X1=2481
+Y1=405
+X2=2488
+Y2=412
+WORLD=0
+INSTANCEID=0
+// Sea east of Serpent's Hold
+X1=3100
+Y1=2940
+X2=4080
+Y2=3660
+WORLD=0
+INSTANCEID=0
+// Sea south of Serpent's Hold, east of Valor island, west of Fire island
+X1=2565
+Y1=3660
+X2=4080
+Y2=3990
+WORLD=0
+INSTANCEID=0
+
+// TRAMMEL
+// Yew West
+X1=55
+Y1=100
+X2=290
+Y2=1300
+WORLD=1
+INSTANCEID=0
+// Map West Boundary
+X1=55
+Y1=1540
+X2=305
+Y2=3990
+WORLD=1
+INSTANCEID=0
+// Bay North of Skara Brae
+X1=305
+Y1=1730
+X2=680
+Y2=2035
+WORLD=1
+INSTANCEID=0
+// Jhelom Sea
+X1=1540
+Y1=3595
+X2=2030
+Y2=3990
+WORLD=1
+INSTANCEID=0
+// Trinsic Sea
+X1=2205
+Y1=2380
+X2=3320
+Y2=3315
+WORLD=1
+INSTANCEID=0
+// Britain, Cove, Vesper Sea
+X1=2265
+Y1=1330
+X2=2745
+Y2=1635
+WORLD=1
+INSTANCEID=0
+// Sea between Vesper and Nujelm
+X1=2990
+Y1=1100
+X2=3400
+Y2=1770
+WORLD=1
+INSTANCEID=0
+// Strait North of Nujelm
+X1=3540
+Y1=100
+X2=3840
+Y2=1020
+WORLD=1
+INSTANCEID=0
+// East Center between Magincia, Ocllo, Moonglow, Fire Island - Part 1
+X1=3840
+Y1=1550
+X2=4500
+Y2=3050
+WORLD=1
+INSTANCEID=0
+// East Center between Magincia, Ocllo, Moonglow, Fire Island - Part 2
+X1=4595
+Y1=1550
+X2=5030
+Y2=3050
+WORLD=1
+INSTANCEID=0
+// Sea east of Serpent's Hold
+X1=3100
+Y1=2940
+X2=4080
+Y2=3660
+WORLD=1
+INSTANCEID=0
+// Sea south of Serpent's Hold, east of Valor island, west of Fire island
+X1=2565
+Y1=3660
+X2=4080
+Y2=3990
+WORLD=1
+INSTANCEID=0
+
+// ILSHENAR
+X1=1287
+Y1=1060
+X2=1310
+Y2=1160
+WORLD=2
+INSTANCEID=0
+X1=1420
+Y1=1052
+X2=1520
+Y2=1085
+WORLD=2
+INSTANCEID=0
+X1=1535
+Y1=385
+X2=1718
+Y2=486
+WORLD=2
+INSTANCEID=0
+
+// MALAS
+X1=1465
+Y1=1590
+X2=1665
+Y2=1697
+WORLD=3
+INSTANCEID=0
+X1=1735
+Y1=1595
+X2=1805
+Y2=1700
+WORLD=3
+INSTANCEID=0
+
+// TOKUNO
+// West Edge
+X1=15
+Y1=15
+X2=73
+Y2=1430
+WORLD=4
+INSTANCEID=0
+// North Edge
+X1=74
+Y1=15
+X2=1430
+Y2=130
+WORLD=4
+INSTANCEID=0
+// East Edge
+X1=1388
+Y1=131
+X2=1430
+Y2=1430
+WORLD=4
+INSTANCEID=0
+// South Edge
+X1=74
+Y1=1380
+X2=1387
+Y2=1430
+WORLD=4
+INSTANCEID=0
+// South East Corner
+X1=950
+Y1=1140
+X2=1387
+Y2=1379
+WORLD=4
+INSTANCEID=0
+// North East Corner
+X1=1070
+Y1=131
+X2=1387
+Y2=440
+WORLD=4
+INSTANCEID=0
+// North West Corner
+X1=74
+Y1=131
+X2=670
+Y2=265
+WORLD=4
+INSTANCEID=0
+// Center
+X1=450
+Y1=616
+X2=765
+Y2=795
+WORLD=4
+INSTANCEID=0
+}
+
+EOF

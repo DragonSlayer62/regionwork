@@ -1,0 +1,22 @@
+// regions_ilshenar_world.dfn
+// [22001-25000]
+
+//Ilshenar Map
+[REGION 25000]
+{
+NAME=Ilshenar
+GUARDED=0
+MUSICLIST=255
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+HOUSING=0
+X1=0
+Y1=0
+X2=2303
+Y2=1599
+WORLD=2
+}
+
+EOF

@@ -1,0 +1,21 @@
+// regions_tokuno_world.dfn
+// [28001-32000]
+
+//Tokuno Map
+[REGION 32000]
+{
+GUARDED=0
+MUSICLIST=255
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+HOUSING=1
+X1=0
+Y1=0
+X2=1447
+Y2=1447
+WORLD=4
+}
+
+EOF

@@ -1,0 +1,21 @@
+// regions_dungeon_blighted_grove.dfn
+// [12001-12050]
+
+[REGION 12050]
+{
+NAME=Blighted Grove
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=6440
+Y1=819
+X2=6602
+Y2=975
+WORLD=1
+}
+
+EOF

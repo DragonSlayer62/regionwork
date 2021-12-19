@@ -1,0 +1,21 @@
+// regions_dungeon_sanctuary.dfn
+// [12701-12750]
+
+[REGION 12750]
+{
+NAME=Sanctuary
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+DUNGEON=1
+X1=6145
+Y1=0
+X2=6397
+Y2=253
+WORLD=1
+}
+
+EOF

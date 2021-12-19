@@ -1,0 +1,22 @@
+// regions_city_britain.dfn
+// [10101-10200]
+
+[REGION 10200]
+{
+NAME=the town of Buccaneers' Den
+GUARDOWNER=The Town
+MUSICLIST=2
+GUARDED=0
+MAGICDAMAGE=1
+MARK=1
+GATE=1
+RECALL=1
+ESCORTS=1
+X1=2620
+Y1=2070
+X2=2785
+Y2=2265
+WORLD=1
+}
+
+EOF
