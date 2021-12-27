@@ -1,13 +1,26 @@
-// regions_city_vesper.dfn
+// regions_felucca_town_vesper.dfn
 // [1401-1500]
+
+[REGION 1401]
+{
+NAME=
+PARENTREGION=1500
+GUARDOWNER=the town
+X1=
+Y1=
+X2=
+Y2=
+WORLD=0
+}
 
 [REGION 1500]
 {
+ABWEATH=8
 NAME=the town of Vesper
 MUSICLIST=11
 GUARDED=1
 GUARDLIST=guard
-GUARDOWNER=The Town
+GUARDOWNER=the town
 MAGICDAMAGE=1
 MARK=1
 GATE=1
