@@ -1,44 +1,6 @@
 // regions_world.dfn
 // [19001-20000]
 
-[REGION 19001] // This is intended for out of town mining areas.
-{
-GUARDED=0
-NAME=Unprotected Mining Zone 1
-MAGICDAMAGE=1
-MARK=1
-GATE=1
-RECALL=1
-WORLD=1
-}
-
-[REGION 19002] // This is intended for in town mining areas.
-{
-GUARDED=1
-NAME=Protected Mining Zone 2
-MAGICDAMAGE=1
-MARK=1
-GATE=1
-RECALL=1
-WORLD=1
-}
-
-[REGION 19022] //dungeon surrounding Wind
-{
-GUARDED=0
-MUSICLIST=23
-MAGICDAMAGE=1
-MARK=0
-GATE=0
-RECALL=1
-DUNGEON=1
-X1=5120
-Y1=0
-X2=5379
-Y2=255
-WORLD=1
-}
-
 [REGION 19023]
 {
 MUSICLIST=18
@@ -246,22 +208,6 @@ X1=1674
 Y1=2670
 X2=1687
 Y2=2682
-WORLD=1
-}
-
-[REGION 19043] // T2a Passages
-{
-GUARDED=0
-MUSICLIST=23
-MAGICDAMAGE=1
-MARK=1
-GATE=1
-RECALL=1
-DUNGEON=1
-X1=5888
-Y1=1282
-X2=6141
-Y2=1535
 WORLD=1
 }
 

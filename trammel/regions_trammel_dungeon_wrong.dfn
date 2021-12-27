@@ -1,7 +1,7 @@
-// regions_dungeon_wrong.dfn
-// [12951-13000]
+// regions_trammel_dungeon_wrong.dfn
+// [13001-13050]
 
-[REGION 13000]
+[REGION 13050]
 {
 NAME=Wrong
 GUARDED=0
