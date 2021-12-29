@@ -552,6 +552,56 @@ X2=5203
 Y2=4072
 WORLD=0
 INSTANCEID=0
+// wind bunk house
+X1=5304
+Y1=29
+X2=5318
+Y2=41
+WORLD=0
+INSTANCEID=0
+// wind Windy Inn part 1
+X1=5213
+Y1=160
+X2=5220
+Y2=164
+WORLD=0
+INSTANCEID=0
+// wind Windy Inn part 2
+X1=5207
+Y1=165
+X2=5220
+Y2=178
+WORLD=0
+INSTANCEID=0
+// wind Windy Inn part 3
+X1=5217
+Y1=172
+X2=5227
+Y2=182
+WORLD=0
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5160
+Y1=16
+X2=5167
+Y2=39
+WORLD=0
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5160
+Y1=16
+X2=5175
+Y2=23
+WORLD=0
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5176
+Y1=16
+X2=5183
+Y2=31
+WORLD=0
+INSTANCEID=0
+
 //Trammel
 // Britain (northeast of bank) - Part 1
 X1=1492
@@ -712,6 +762,55 @@ X1=624
 Y1=832
 X2=646
 Y2=854
+WORLD=1
+INSTANCEID=0
+// wind bunk house
+X1=5304
+Y1=29
+X2=5318
+Y2=41
+WORLD=1
+INSTANCEID=0
+// wind Windy Inn part 1
+X1=5213
+Y1=160
+X2=5220
+Y2=164
+WORLD=1
+INSTANCEID=0
+// wind Windy Inn part 2
+X1=5207
+Y1=165
+X2=5220
+Y2=178
+WORLD=1
+INSTANCEID=0
+// wind Windy Inn part 3
+X1=5217
+Y1=172
+X2=5227
+Y2=182
+WORLD=1
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5160
+Y1=16
+X2=5167
+Y2=39
+WORLD=1
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5160
+Y1=16
+X2=5175
+Y2=23
+WORLD=1
+INSTANCEID=0
+//wind seekers inn part 1
+X1=5176
+Y1=16
+X2=5183
+Y2=31
 WORLD=1
 INSTANCEID=0
 //Ilshenar Lord Oaks Tavern
