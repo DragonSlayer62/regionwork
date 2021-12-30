@@ -1,4 +1,25 @@
 // regions_trammel_dungeon_britain_passage.dfn
 // [12051-12100]
 
+[REGION 12100]
+{
+NAME=britain passage
+GUARDED=0
+MUSICLIST=23
+MAGICDAMAGE=1
+MARK=0
+GATE=0
+RECALL=0
+DUNGEON=1
+X1=6026
+Y1=1418
+X2=6153
+Y2=1505
+X1=6116
+Y1=1391
+X2=6147
+Y2=1417
+WORLD=1
+}
+
 EOF
